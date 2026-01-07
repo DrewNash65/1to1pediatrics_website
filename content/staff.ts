@@ -9,7 +9,8 @@ export const staffContent: ContentPage = {
       content: {
         title: "Our Dedicated Team",
         subtitle: "Experienced, Caring Professionals",
-        description: "The friendly and experienced staff at 1-to-1 Pediatrics is here to support you and your family."
+        description: "The friendly and experienced staff at 1-to-1 Pediatrics is here to support you and your family.",
+        image: "/images/Nash Group Photo.jpg"
       }
     },
     {
@@ -36,7 +37,9 @@ export const staffContent: ContentPage = {
       type: "info",
       content: {
         title: "Our Commitment to You",
-        description: "Every member of our team is dedicated to providing the highest quality, personalized care for your child. From the moment you walk through our doors, you'll experience the difference that a small, hometown practice can make. We're not just here to process paperwork—we're here to support your family's healthcare journey."
+        description: "Every member of our team is dedicated to providing the highest quality, personalized care for your child. From the moment you walk through our doors, you'll experience the difference that a small, hometown practice can make. We're not just here to process paperwork—we're here to support your family's healthcare journey.",
+        image: "/images/Nash-web13.jpg",
+        imagePosition: "right"
       }
     },
     {

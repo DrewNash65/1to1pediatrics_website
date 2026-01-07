@@ -9,7 +9,8 @@ export const telemedicineContent: ContentPage = {
       content: {
         title: "Telemedicine Visits",
         subtitle: "Quality Care from the Comfort of Home",
-        description: "Speak face-to-face with your doctor in a virtual environment to discuss medical concerns and symptoms."
+        description: "Speak face-to-face with your doctor in a virtual environment to discuss medical concerns and symptoms.",
+        image: "/images/Nash-web7.jpg"
       }
     },
     {
@@ -23,7 +24,9 @@ export const telemedicineContent: ContentPage = {
       type: "info",
       content: {
         title: "How It Works",
-        description: "Telemedicine visits will be scheduled as appointments, the same way that normal office visits are done. Please call the office to schedule a telemedicine visit. Just prior to your appointment time, you'll receive a link to 'check in' to the visit. You'll then be entered into the queue to be seen."
+        description: "Telemedicine visits will be scheduled as appointments, the same way that normal office visits are done. Please call the office to schedule a telemedicine visit. Just prior to your appointment time, you'll receive a link to 'check in' to the visit. You'll then be entered into the queue to be seen.",
+        image: "/images/Nash-web9.jpg",
+        imagePosition: "left"
       }
     },
     {

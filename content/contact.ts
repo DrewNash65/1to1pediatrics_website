@@ -48,7 +48,9 @@ export const contactContent: ContentPage = {
       type: "info",
       content: {
         title: "Schedule a Visit",
-        description: "Interested in joining our practice? Call us to schedule a complimentary 'Meet and Greet' appointment with Dr. Nash or Dr. Borden. This is a great opportunity to tour our office, meet our team, and learn more about our practice model."
+        description: "Interested in joining our practice? Call us to schedule a complimentary 'Meet and Greet' appointment with Dr. Nash or Dr. Borden. This is a great opportunity to tour our office, meet our team, and learn more about our practice model.",
+        image: "/images/Nash-web8.jpg",
+        imagePosition: "right"
       }
     }
   ]

@@ -9,7 +9,8 @@ export const whyOneToOneContent: ContentPage = {
       content: {
         title: "Why 1-to-1 Pediatrics?",
         subtitle: "Old-School Care, Modern Medicine",
-        description: "A hometown style pediatric service insulated from the hurried pace of most modern-day primary care practices."
+        description: "A hometown style pediatric service insulated from the hurried pace of most modern-day primary care practices.",
+        image: "/images/IMG_0298.JPG"
       }
     },
     {

@@ -9,7 +9,8 @@ export const drNashContent: ContentPage = {
       content: {
         title: "Andrew L. Nash, M.D.",
         subtitle: "Founding Physician",
-        description: "Dr. Drew Nash is the founding physician of 1-to-1 Pediatrics and has been practicing primary care pediatrics in the East Bay for over 25 years."
+        description: "Dr. Drew Nash is the founding physician of 1-to-1 Pediatrics and has been practicing primary care pediatrics in the East Bay for over 25 years.",
+        image: "/images/Dr_Nash_New.PNG"
       }
     },
     {

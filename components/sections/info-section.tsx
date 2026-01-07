@@ -7,6 +7,8 @@ interface InfoSectionProps {
   callout?: boolean
   quote?: boolean
   author?: string
+  image?: string
+  imagePosition?: 'left' | 'right'
 }
 
 export function InfoSection({
@@ -14,7 +16,9 @@ export function InfoSection({
   description,
   callout,
   quote,
-  author
+  author,
+  image,
+  imagePosition = 'right'
 }: InfoSectionProps) {
   if (quote) {
     return (
@@ -46,17 +50,40 @@ export function InfoSection({
       callout && "bg-blue-50"
     )}>
       <div className="container mx-auto px-4">
-        <div className={cn(
-          "mx-auto max-w-3xl",
-          callout && "bg-white rounded-lg p-8 shadow-sm border-l-4 border-primary"
-        )}>
-          <h2 className="mb-4 text-2xl font-bold md:text-3xl">
-            {title}
-          </h2>
-          <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
-            {description}
-          </p>
-        </div>
+        {image ? (
+          <div className={cn(
+            "mx-auto max-w-6xl grid md:grid-cols-2 gap-8 md:gap-12 items-center",
+            callout && "bg-white rounded-lg p-8 shadow-sm border-l-4 border-primary"
+          )}>
+            <div className={imagePosition === 'left' ? 'md:order-2' : ''}>
+              <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+                {title}
+              </h2>
+              <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
+                {description}
+              </p>
+            </div>
+            <div className={imagePosition === 'left' ? 'md:order-1' : ''}>
+              <img
+                src={image}
+                alt={title}
+                className="rounded-lg shadow-lg w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        ) : (
+          <div className={cn(
+            "mx-auto max-w-3xl",
+            callout && "bg-white rounded-lg p-8 shadow-sm border-l-4 border-primary"
+          )}>
+            <h2 className="mb-4 text-2xl font-bold md:text-3xl">
+              {title}
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed whitespace-pre-line">
+              {description}
+            </p>
+          </div>
+        )}
       </div>
     </section>
   )

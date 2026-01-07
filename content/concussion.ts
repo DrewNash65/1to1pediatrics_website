@@ -35,7 +35,9 @@ export const concussionContent: ContentPage = {
       type: "info",
       content: {
         title: "What is ImPACT?",
-        description: "ImPACT (Immediate Post-Concussion Assessment and Cognitive Testing) is a computer-based neurocognitive tool established by researchers at the University of Pittsburgh. This testing evaluates visual and verbal memory, problem-solving ability, and reaction times to establish baseline scores in athletes. The evaluation is then re-administered following head injuries to follow the recovery process. Dr. Nash is a Credentialed ImPACT Consultant—the only primary care pediatrician in California with this certification."
+        description: "ImPACT (Immediate Post-Concussion Assessment and Cognitive Testing) is a computer-based neurocognitive tool established by researchers at the University of Pittsburgh. This testing evaluates visual and verbal memory, problem-solving ability, and reaction times to establish baseline scores in athletes. The evaluation is then re-administered following head injuries to follow the recovery process. Dr. Nash is a Credentialed ImPACT Consultant—the only primary care pediatrician in California with this certification.",
+        image: "/images/Nash-web8.jpg",
+        imagePosition: "left"
       }
     },
     {
