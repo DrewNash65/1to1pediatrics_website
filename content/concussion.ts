@@ -19,14 +19,6 @@ export const concussionContent: ContentPage = {
     {
       type: "info",
       content: {
-        title: "COVID-19 Update",
-        description: "Because of the global pandemic, we have suspended baseline ImPACT testing at our facility. However, we now have the ability to have individuals complete baseline testing for ages 11 years through adulthood in your own home. The process of completing testing in the home environment has been validated by ImPACT to be accurate and reliable.",
-        callout: true
-      }
-    },
-    {
-      type: "info",
-      content: {
         title: "About Concussions",
         description: "Over the past few years, the medical community has become increasingly aware of the effect of head trauma on the adolescent brain. Teenagers and young adults often don't exhibit symptoms of a mild traumatic brain injury (mTBI) resulting from a level of impact that would cause more obvious findings in an adult. Consequently, an adolescent athlete with post-concussive syndrome most likely has suffered a more substantial injury than an adult with a similar level of symptoms. After suffering an initial mTBI, the young athlete is at a five-fold risk of sustaining another. If repeated trauma occurs after the initial injury has had a chance to fully resolve, 'second impact syndrome' may result—with tragic consequences."
       }
@@ -36,7 +28,7 @@ export const concussionContent: ContentPage = {
       content: {
         title: "What is ImPACT?",
         description: "ImPACT (Immediate Post-Concussion Assessment and Cognitive Testing) is a computer-based neurocognitive tool established by researchers at the University of Pittsburgh. This testing evaluates visual and verbal memory, problem-solving ability, and reaction times to establish baseline scores in athletes. The evaluation is then re-administered following head injuries to follow the recovery process. Dr. Nash is a Credentialed ImPACT Consultant—the only primary care pediatrician in California with this certification.",
-        image: "/images/Nash-web8.jpg",
+        image: "/images/Nash-web3.jpg",
         imagePosition: "left"
       }
     },

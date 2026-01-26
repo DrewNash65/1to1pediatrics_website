@@ -9,7 +9,8 @@ export const drBordenContent: ContentPage = {
       content: {
         title: "Marianne Borden, M.D.",
         subtitle: "Pediatrician",
-        description: "Dr. Marianne Borden joined 1-to-1 Pediatrics, bringing extensive experience and a deep connection to the Danville community."
+        description: "Dr. Marianne Borden joined 1-to-1 Pediatrics, bringing extensive experience and a deep connection to the Danville community.",
+        image: "/images/marianne_borden2.png"
       }
     },
     {
@@ -23,9 +24,7 @@ export const drBordenContent: ContentPage = {
       type: "info",
       content: {
         title: "Education & Training",
-        description: "After high school, Marianne attended UCLA, graduating summa cum laude from the Honors College with a bachelor's degree in Biology. She then attended UCLA School of Medicine, earning her MD degree in 1999. Marianne fell in love with pediatrics during her clinical rotations in medical school and was thrilled to return to the Bay Area, choosing Lucile Packard Children's Hospital at Stanford for her pediatric residency from 1999-2002.",
-        image: "/images/Nash-web10.jpg",
-        imagePosition: "left"
+        description: "After high school, Marianne attended UCLA, graduating summa cum laude from the Honors College with a bachelor's degree in Biology. She then attended UCLA School of Medicine, earning her MD degree in 1999. Marianne fell in love with pediatrics during her clinical rotations in medical school and was thrilled to return to the Bay Area, choosing Lucile Packard Children's Hospital at Stanford for her pediatric residency from 1999-2002."
       }
     },
     {

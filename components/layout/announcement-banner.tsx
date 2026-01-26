@@ -43,27 +43,27 @@ export function AnnouncementBanner() {
   return (
     <div
       className={cn(
-        "relative w-full border-b px-4 py-3",
+        "relative w-full border-b px-4 py-4 announcement-glow",
         activeAnnouncement.type === "success" && "bg-green-50 border-green-200 text-green-900",
         activeAnnouncement.type === "warning" && "bg-yellow-50 border-yellow-200 text-yellow-900",
-        activeAnnouncement.type === "info" && "bg-blue-50 border-blue-200 text-blue-900"
+        activeAnnouncement.type === "info" && "bg-stone-50 border-teal-200 text-slate-800"
       )}
     >
-      <div className="container mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <Icon className="h-5 w-5 flex-shrink-0" />
+      <div className="container mx-auto flex items-center justify-center">
+        <div className="flex items-center gap-3 text-center">
+          <Icon className="h-6 w-6 flex-shrink-0" />
           <div>
-            <p className="font-semibold text-sm">{activeAnnouncement.title}</p>
-            <p className="text-sm opacity-90">{activeAnnouncement.message}</p>
+            <p className="font-bold text-lg">{activeAnnouncement.title}</p>
+            <p className="text-base font-medium">{activeAnnouncement.message}</p>
           </div>
         </div>
         {activeAnnouncement.dismissible && (
           <button
             onClick={handleDismiss}
-            className="rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+            className="absolute right-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
             aria-label="Dismiss announcement"
           >
-            <X className="h-4 w-4" />
+            <X className="h-5 w-5" />
           </button>
         )}
       </div>

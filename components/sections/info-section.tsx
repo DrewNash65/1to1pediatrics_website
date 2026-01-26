@@ -22,7 +22,7 @@ export function InfoSection({
 }: InfoSectionProps) {
   if (quote) {
     return (
-      <section className="py-12 md:py-16">
+      <section className="py-6 md:py-8">
         <div className="container mx-auto px-4">
           <blockquote className="mx-auto max-w-3xl">
             <div className="relative bg-slate-50 rounded-lg p-8 md:p-12">
@@ -46,8 +46,8 @@ export function InfoSection({
 
   return (
     <section className={cn(
-      "py-12 md:py-16",
-      callout && "bg-blue-50"
+      "py-6 md:py-8",
+      callout && "bg-stone-50"
     )}>
       <div className="container mx-auto px-4">
         {image ? (

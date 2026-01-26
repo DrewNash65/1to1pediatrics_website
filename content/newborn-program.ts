@@ -49,7 +49,7 @@ export const newbornProgramContent: ContentPage = {
       content: {
         title: "About Enrollment",
         description: "To allow time to provide these services, enrollment in the 1-to-1 Pediatrics Newborn Program is limited. We recommend inquiring about enrollment during your pregnancy or as soon as your baby is born. Please feel free to contact us to inquire about enrolling your family in this unique 'hometown style' pediatric service.",
-        image: "/images/Nash-web13.jpg",
+        image: "/images/Nash-web6.jpg",
         imagePosition: "left"
       }
     },

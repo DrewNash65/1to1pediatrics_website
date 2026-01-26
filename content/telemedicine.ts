@@ -10,14 +10,14 @@ export const telemedicineContent: ContentPage = {
         title: "Telemedicine Visits",
         subtitle: "Quality Care from the Comfort of Home",
         description: "Speak face-to-face with your doctor in a virtual environment to discuss medical concerns and symptoms.",
-        image: "/images/Nash-web7.jpg"
+        image: "/images/Telehealth_Dr_Nash.png"
       }
     },
     {
       type: "info",
       content: {
         title: "What is Telemedicine?",
-        description: "With concern over COVID-19 and other illnesses, we at 1-to-1 Pediatrics are rolling out new ways for our patients to obtain healthcare from our physicians and staff. Telemedicine allows patients to speak face-to-face, in a virtual environment, with your doctor to discuss medical concerns and symptoms. Depending on the type of problem, the physician may be able to diagnose and treat the condition through the virtual visit. In most cases, these visits are billed to and covered by commercial health insurance. Copays, deductibles, and coinsurance will apply as usual."
+        description: "At the start of the COVID-19 pandemic, 1-to-1 Pediatrics rolled out new ways for our patients to obtain healthcare from our physicians and staff. Telemedicine allows patients to speak face-to-face, in a virtual environment, with your doctor to discuss medical concerns and symptoms. Depending on the type of problem, the physician may be able to diagnose and treat the condition through the virtual visit. In most cases, these visits are billed to and covered by commercial health insurance. Copays, deductibles, and coinsurance will apply as usual."
       }
     },
     {
@@ -25,7 +25,7 @@ export const telemedicineContent: ContentPage = {
       content: {
         title: "How It Works",
         description: "Telemedicine visits will be scheduled as appointments, the same way that normal office visits are done. Please call the office to schedule a telemedicine visit. Just prior to your appointment time, you'll receive a link to 'check in' to the visit. You'll then be entered into the queue to be seen.",
-        image: "/images/Nash-web9.jpg",
+        image: "/images/Nash-web4.jpg",
         imagePosition: "left"
       }
     },
@@ -61,10 +61,34 @@ export const telemedicineContent: ContentPage = {
       }
     },
     {
+      type: "features",
+      content: {
+        title: "Start Your Telemedicine Visit",
+        subtitle: "Click on your provider's link to begin your virtual appointment",
+        features: [
+          {
+            title: "Start a Telemedicine Call With Dr. Nash",
+            description: "By clicking on the link to the left, the patient/parent agrees to have their visit with Dr. Nash via Telehealth. Copays, coinsurance, and deductibles will apply as per the patient's health insurance plan.",
+            link: "https://doxy.me/v2/check-in/drnash/?utm_source=Badge&utm_medium=Badge"
+          },
+          {
+            title: "Start a Telemedicine Call With Dr. Borden",
+            description: "By clicking on the link to the left, the patient/parent agrees to have their visit with Dr. Borden via Telehealth. Copays, coinsurance, and deductibles will apply as per the patient's health insurance plan.",
+            link: "https://doxy.me/v2/check-in/drborden/?utm_source=Badge&utm_medium=Badge"
+          },
+          {
+            title: "Start a Telemedicine Call With Beth Quadraccia, PA",
+            description: "By clicking on the link to the left, the patient/parent agrees to have their visit with Beth Quadraccia, PA via Telehealth. Copays, coinsurance, and deductibles will apply as per the patient's health insurance plan.",
+            link: "#"
+          }
+        ]
+      }
+    },
+    {
       type: "cta",
       content: {
-        title: "Ready to Schedule?",
-        description: "Call our office to schedule a telemedicine visit with Dr. Nash or Dr. Borden.",
+        title: "Need to Schedule?",
+        description: "Call our office to schedule a telemedicine visit with Dr. Nash, Dr. Borden, or Beth Quadraccia, PA.",
         cta: {
           text: "Call (925) 362-1861",
           href: "tel:9253621861"

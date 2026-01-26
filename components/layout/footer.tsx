@@ -10,7 +10,14 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Practice Info */}
           <div className="space-y-4">
-            <h3 className="font-bold text-lg">1-to-1 Pediatrics</h3>
+            <div className="flex items-center space-x-2">
+              <img 
+                src="/images/1_to_1_logo.png" 
+                alt="1-to-1 Pediatrics Logo" 
+                className="h-8 w-auto"
+              />
+              <h3 className="font-bold text-lg">1-to-1 Pediatrics</h3>
+            </div>
             <p className="text-sm text-muted-foreground">
               Hometown Care for Your Child. Personalized pediatric care with an old-school philosophy.
             </p>
@@ -35,6 +42,7 @@ export function Footer() {
                   <p className="font-medium">Address</p>
                   <p className="text-muted-foreground">
                     {siteConfig.links.address.street}<br />
+                    {siteConfig.links.address.suite}<br />
                     {siteConfig.links.address.city}, {siteConfig.links.address.state} {siteConfig.links.address.zip}
                   </p>
                 </div>

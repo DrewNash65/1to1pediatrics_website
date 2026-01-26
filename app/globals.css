@@ -123,3 +123,132 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Custom announcement banner animation */
+@keyframes announcement-glow {
+  0% {
+    box-shadow: 0 0 5px rgba(34, 197, 94, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.8);
+    transform: scale(1.01);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(34, 197, 94, 0.5);
+    transform: scale(1);
+  }
+}
+
+.announcement-glow {
+  animation: announcement-glow 2s ease-in-out infinite;
+}
+
+/* Modern card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Gradient backgrounds */
+.gradient-bg {
+  background: linear-gradient(135deg, #5f9ea0 0%, #4a7c7e 100%);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, #4a7c7e 0%, #3a6b6d 100%);
+}
+
+.gradient-green {
+  background: linear-gradient(135deg, #5f9ea0 0%, #4a8a8c 100%);
+}
+
+/* Interactive buttons */
+.btn-modern {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.btn-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.btn-modern:hover::before {
+  left: 100%;
+}
+
+.btn-modern:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Pulse effect for important elements */
+@keyframes pulse-color {
+  0%, 100% { background-color: rgb(95 158 160); }
+  50% { background-color: rgb(74 124 126); }
+}
+
+.pulse-bg {
+  animation: pulse-color 2s infinite;
+}
+
+/* Modern glassmorphism effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Slide in animations */
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 0.8s ease-out;
+}
+
+.slide-in-right {
+  animation: slide-in-right 0.8s ease-out;
+}

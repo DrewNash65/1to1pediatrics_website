@@ -18,39 +18,18 @@ export const contactContent: ContentPage = {
         title: "Contact Information",
         features: [
           {
-            title: "Phone",
-            description: "(925) 362-1861"
+            title: "Phone & Fax",
+            description: "Phone:\n(925) 362-1861\nor\n(925) DOC-1TO1\n\nFax:\n(925) 838-6329"
           },
           {
             title: "Address",
-            description: "3070 Camino Tassajara Suite 130, Danville, CA 94506"
+            description: "911 San Ramon Valley Boulevard\nSuite 100\nDanville, CA 94526"
           },
           {
             title: "Office Hours",
-            description: "Monday - Friday: 8:30 AM - 5:00 PM (Closed for lunch 12:00 PM - 1:30 PM)"
-          },
-          {
-            title: "Fax",
-            description: "(925) 362-1862"
+            description: "Monday-Wednesday:\n    9 am-12:30 pm\n    2 pm-5 pm\nThursday-Friday:\n    9 am-2 pm"
           }
         ]
-      }
-    },
-    {
-      type: "info",
-      content: {
-        title: "Important Notice",
-        description: "Please do not send urgent medical concerns through this form or email. If you have a medical emergency, please call 911 or proceed to the nearest emergency room. For urgent but non-emergency concerns during office hours, please call our office directly.",
-        callout: true
-      }
-    },
-    {
-      type: "info",
-      content: {
-        title: "Schedule a Visit",
-        description: "Interested in joining our practice? Call us to schedule a complimentary 'Meet and Greet' appointment with Dr. Nash or Dr. Borden. This is a great opportunity to tour our office, meet our team, and learn more about our practice model.",
-        image: "/images/Nash-web8.jpg",
-        imagePosition: "right"
       }
     }
   ]

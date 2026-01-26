@@ -16,7 +16,9 @@ export const registerContent: ContentPage = {
       type: "info",
       content: {
         title: "The Registration Process",
-        description: "To enroll in 1-to-1 Pediatrics, please contact our office to schedule a \"Meet and Greet\" appointment with Dr. Nash or Dr. Borden. This complimentary visit gives you the opportunity to tour our office, meet our team, and learn more about our practice model. It's a great way to see if 1-to-1 Pediatrics is the right fit for your family."
+        description: "Before joining 1-to-1 Pediatrics, please contact our office to schedule a \"Meet & Greet\" appointment with one of our providers.  This complementary visit gives you the opportunity to meet our team and learn more about our practice model.  It's a great way to see if 1-to-1 Pediatrics is right for your family. We usually perform these meetings \"virtually,\" however, if you would like to meet in person, just let us know when you schedule.",
+        image: "/images/Nash-web9.jpg",
+        imagePosition: "left"
       }
     },
     {
@@ -30,23 +32,35 @@ export const registerContent: ContentPage = {
     {
       type: "features",
       content: {
-        title: "What to Bring",
+        title: "What to Bring to the Meet and Greet",
         features: [
           {
-            title: "Insurance Information",
-            description: "Bring your insurance card and any relevant policy information"
+            title: "Questions About the Practice",
+            description: "Any questions you might have about the practice, hours, and availability"
           },
           {
-            title: "Medical Records",
-            description: "If transferring from another practice, bring your child's vaccination records and medical history"
+            title: "Parents and Family",
+            description: "One or both parents. Kids can join too if they would like."
+          }
+        ]
+      }
+    },
+    {
+      type: "features",
+      content: {
+        title: "What to Bring to the First Office Visit",
+        features: [
+          {
+            title: "Questions or Concerns",
+            description: "Questions or concerns regarding your child"
           },
           {
-            title: "Questions",
-            description: "Write down any questions you have about our practice model and services"
+            title: "Insurance Card",
+            description: "Copy of your insurance card"
           },
           {
-            title: "Your Child",
-            description: "While not required, it's nice for us to meet your child during the visit"
+            title: "Vaccination Records",
+            description: "Copy of vaccination records (if not a newborn)"
           }
         ]
       }

@@ -7,35 +7,38 @@ export interface NavItem {
   icon?: React.ComponentType<{ className?: string }>
 }
 
-export const mainNav: NavItem[] = [
+// First row navigation items
+export const topRowNav: NavItem[] = [
   { title: "Home", href: "/" },
-  { title: "Concussion", href: "/concussion" },
   { title: "Why 1-to-1?", href: "/why-1-to-1" },
-  { title: "Telemedicine", href: "/telemedicine" },
-  { title: "Register", href: "/register" },
-  { title: "HMO Patients", href: "/hmo-patients" },
+  { title: "Meet & Greet", href: "/register" },
+  { title: "Register", href: "/register-for-practice" },
   { title: "Dr. Nash", href: "/dr-nash" },
   { title: "Dr. Borden", href: "/dr-borden" },
+  { title: "Beth Quadraccia, PA", href: "/beth-quadraccia" },
   { title: "Contact", href: "/contact" },
+]
+
+// Second row navigation items
+export const bottomRowNav: NavItem[] = [
+  { title: "Concussion", href: "/concussion" },
+  { title: "Telemedicine", href: "/telemedicine" },
+  { title: "HouseCall For Kids", href: "/housecall-for-kids" },
+  { title: "HMO Patients", href: "/hmo-patients" },
   { title: "Newborn Program", href: "/newborn-program" },
   { title: "Staff", href: "/staff" },
   { title: "Testimonials", href: "/testimonials" },
   { title: "Helpful Links", href: "/helpful-links" },
-  { title: "Privacy Policy", href: "/privacy-policy" },
-  { title: "Tylenol Note", href: "/tylenol-note" },
-  { title: "Vaccination Policy", href: "/vaccination-policy" },
 ]
+
+// Keep mainNav and moreNav for backwards compatibility
+export const mainNav: NavItem[] = topRowNav
+export const moreNav: NavItem[] = bottomRowNav
 
 export const externalNav: NavItem[] = [
   {
     title: "Podcast for Parents",
     href: "https://theownersmanual.podbean.com",
-    external: true,
-    icon: ExternalLink
-  },
-  {
-    title: "Office",
-    href: "https://www.DrNashOnline.com",
     external: true,
     icon: ExternalLink
   },

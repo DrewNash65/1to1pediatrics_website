@@ -20,27 +20,32 @@ export function HeroSection({
   image
 }: HeroSectionProps) {
   return (
-    <section className="relative bg-gradient-to-b from-blue-50 to-white py-20 md:py-32">
-      <div className="container mx-auto px-4">
+    <section className="relative bg-gradient-to-br from-stone-50 via-amber-50/30 to-slate-50 py-16 md:py-24 overflow-hidden">
+      {/* Animated background elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-32 w-96 h-96 bg-gradient-to-br from-teal-400/8 to-slate-400/8 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-40 -left-32 w-96 h-96 bg-gradient-to-br from-amber-400/6 to-teal-400/8 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+      </div>
+      <div className="container mx-auto px-4 relative z-10">
         <div className={`mx-auto ${image ? 'grid md:grid-cols-2 gap-12 items-center max-w-6xl' : 'max-w-3xl text-center'}`}>
-          <div className={image ? '' : 'text-center'}>
+          <div className={`${image ? 'slide-in-left' : 'text-center'}`}>
             {subtitle && (
-              <p className="mb-4 text-lg font-semibold text-primary">
+              <p className="mb-4 text-lg font-semibold text-primary bg-primary/10 px-4 py-2 rounded-full inline-block">
                 {subtitle}
               </p>
             )}
-            <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+            <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-slate-700 to-teal-700 bg-clip-text text-transparent">
               {title}
             </h1>
             {description && (
-              <p className="mb-8 text-lg text-muted-foreground md:text-xl">
+              <p className="mb-8 text-lg text-muted-foreground md:text-xl leading-relaxed">
                 {description}
               </p>
             )}
             {cta && (
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link href={cta.href}>
-                  <Button size="lg" className="font-semibold">
+                  <Button size="lg" className="font-semibold shadow-2xl hover:shadow-teal-500/20">
                     {cta.text}
                   </Button>
                 </Link>
@@ -48,11 +53,12 @@ export function HeroSection({
             )}
           </div>
           {image && (
-            <div className="relative">
+            <div className="relative slide-in-right">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-lg blur-lg opacity-30 transform scale-105"></div>
               <img
                 src={image}
                 alt={`${title} - 1-to-1 Pediatrics`}
-                className="rounded-lg shadow-lg w-full h-auto object-cover"
+                className="rounded-lg shadow-2xl w-full h-auto object-cover relative z-10 float-animation"
               />
             </div>
           )}

@@ -24,7 +24,9 @@ export const vaccinationPolicyContent: ContentPage = {
       type: "info",
       content: {
         title: "Recommended Vaccination Schedule",
-        description: "We recommend that all children receive vaccines according to the standard schedule, which provides protection when children are most vulnerable to serious diseases. This schedule has been extensively studied and is designed to provide optimal protection while maintaining safety. Delaying or skipping vaccines leaves children vulnerable to preventable illnesses for longer than necessary."
+        description: "We recommend that all children receive vaccines according to the standard schedule, which provides protection when children are most vulnerable to serious diseases. This schedule has been extensively studied and is designed to provide optimal protection while maintaining safety. Delaying or skipping vaccines leaves children vulnerable to preventable illnesses for longer than necessary.",
+        image: "/images/Nash-web8.jpg",
+        imagePosition: "right"
       }
     },
     {
