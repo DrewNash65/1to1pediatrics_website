@@ -10,7 +10,7 @@ export const houseCallForKidsContent: ContentPage = {
         title: "HouseCall For Kids",
         subtitle: "Telehealth Urgent Care",
         description: "Quality urgent care from the comfort of your home, car, or wherever you are.",
-        image: "/images/Nash-web5.jpg"
+        image: "/images/Telehealth_Dr_Nash2.png"
       }
     },
     {
@@ -18,17 +18,6 @@ export const houseCallForKidsContent: ContentPage = {
       content: {
         title: "Skip the Waiting Room",
         description: "Tired of long lines at the local urgent care where you have to sit in a waiting room being exposed to your next illness? Well now there is an alternative. HouseCall For Kids is a NEW Telehealth based urgent care for children and young adults."
-      }
-    },
-    {
-      type: "cta",
-      content: {
-        title: "Click To Schedule",
-        description: "Ready to skip the waiting room? Schedule your appointment now.",
-        cta: {
-          text: "Click To Schedule",
-          href: "https://housecallforkids.com/schedule"
-        }
       }
     },
     {
@@ -44,7 +33,7 @@ export const houseCallForKidsContent: ContentPage = {
       type: "info",
       content: {
         title: "Important Information",
-        description: "This is a completely separate practice from 1-to-1 Pediatrics/Danville Pediatrics and is \"out of network\" with commercial insurance carriers. Credit cards and HSA/FSA Cards may be used for payment and you will receive an itemized receipt/superbill automatically at the completion of the visit.\n\nDespite its name, HouseCall For Kids will also see young adults (parents) as well."
+        description: "This is a completely separate practice from 1-to-1 Pediatrics/Danville Pediatrics and is \"out of network\" with commercial insurance carriers. Payment for the visit is collected at the time of the appointment. Credit cards and HSA/FSA Cards may be used for payment and you will receive an itemized receipt/superbill automatically at the completion of the visit.\n\nDespite its name, HouseCall For Kids will also see young adults (parents) as well."
       }
     },
     {
@@ -73,7 +62,7 @@ export const houseCallForKidsContent: ContentPage = {
           },
           {
             title: "Evening & Weekend Hours",
-            description: "Available when most urgent care needs arise, staffed by Dr. Nash."
+            description: "Available after hours and on weekends/holidays. Staffed by Dr. Nash from 1-to-1 Pediatrics."
           }
         ]
       }
@@ -84,13 +73,20 @@ export const houseCallForKidsContent: ContentPage = {
         title: "Frequently Asked Questions",
         features: [
           {
-            title: "What do I need to schedule?",
+            title: "How do I schedule an appointment?",
             description: "Simple, just click on the link below, or go to HouseCallForKids.com/schedule. Click on an appointment time that works for you. You will be asked to pay a deposit to secure the appointment time and will then be sent login credentials for your own secure patient portal where you will be asked to complete some basic intake forms/consent forms."
           },
           {
             title: "Will HouseCall For Kids see parents too?",
             description: "Yes, we are trying to make things easier for everybody."
-          },
+          }
+        ]
+      }
+    },
+    {
+      type: "features",
+      content: {
+        features: [
           {
             title: "Is this only for current patients of 1-to-1 Pediatrics/Danville Pediatrics?",
             description: "No, anybody, so long as they are physically in California at the time of the visit, can use this service. Tell your neighbors and relatives!"

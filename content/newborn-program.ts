@@ -24,6 +24,7 @@ export const newbornProgramContent: ContentPage = {
       type: "features",
       content: {
         title: "Program Highlights",
+        columns: 2,
         features: [
           {
             title: "24/7 Availability",

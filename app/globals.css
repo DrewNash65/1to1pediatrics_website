@@ -124,24 +124,44 @@
   }
 }
 
-/* Custom announcement banner animation */
+/* Custom announcement banner animation - Enhanced with flashing effect */
 @keyframes announcement-glow {
   0% {
-    box-shadow: 0 0 5px rgba(34, 197, 94, 0.5);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.6), 0 0 20px rgba(34, 197, 94, 0.4);
     transform: scale(1);
   }
   50% {
-    box-shadow: 0 0 20px rgba(34, 197, 94, 0.8);
-    transform: scale(1.01);
+    box-shadow: 0 0 25px rgba(34, 197, 94, 1), 0 0 40px rgba(34, 197, 94, 0.7);
+    transform: scale(1.005);
   }
   100% {
-    box-shadow: 0 0 5px rgba(34, 197, 94, 0.5);
+    box-shadow: 0 0 10px rgba(34, 197, 94, 0.6), 0 0 20px rgba(34, 197, 94, 0.4);
     transform: scale(1);
   }
 }
 
+/* Flashing background animation */
+@keyframes announcement-flash {
+  0%, 100% {
+    background-color: rgb(240 253 244); /* green-50 */
+  }
+  50% {
+    background-color: rgb(187 247 208); /* green-200 - brighter flash */
+  }
+}
+
+/* Pulsing border animation */
+@keyframes announcement-pulse {
+  0%, 100% {
+    border-color: rgb(187 247 208); /* green-200 */
+  }
+  50% {
+    border-color: rgb(34 197 94); /* green-500 - more intense */
+  }
+}
+
 .announcement-glow {
-  animation: announcement-glow 2s ease-in-out infinite;
+  animation: announcement-glow 1.5s ease-in-out infinite, announcement-flash 2s ease-in-out infinite, announcement-pulse 1.5s ease-in-out infinite;
 }
 
 /* Modern card hover effects */
@@ -251,4 +271,54 @@
 
 .slide-in-right {
   animation: slide-in-right 0.8s ease-out;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  /* Better touch targets */
+  button, a, input, textarea, select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Improved text legibility */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px; /* Prevent iOS zoom */
+  }
+  
+  /* Better spacing for mobile */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Prevent horizontal scrolling */
+  body, html {
+    overflow-x: hidden;
+  }
+  
+  /* Better video responsiveness */
+  iframe {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Better form styling on mobile */
+  input, textarea {
+    font-size: 16px; /* Prevent iOS zoom */
+    border-radius: 8px;
+  }
+  
+  /* Improve touch feedback */
+  button:active, a:active {
+    transform: scale(0.98);
+  }
 }

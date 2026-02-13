@@ -26,9 +26,11 @@ export const bottomRowNav: NavItem[] = [
   { title: "HouseCall For Kids", href: "/housecall-for-kids" },
   { title: "HMO Patients", href: "/hmo-patients" },
   { title: "Newborn Program", href: "/newborn-program" },
-  { title: "Staff", href: "/staff" },
+  { title: "Vaccination Policy", href: "/vaccination-policy" },
+  { title: "Dosing Charts", href: "/dosing-charts" },
+  { title: "Handouts/Links", href: "/helpful-links" },
   { title: "Testimonials", href: "/testimonials" },
-  { title: "Helpful Links", href: "/helpful-links" },
+  { title: "Staff", href: "/staff" },
 ]
 
 // Keep mainNav and moreNav for backwards compatibility
@@ -46,5 +48,6 @@ export const externalNav: NavItem[] = [
 
 export const footerNav: NavItem[] = [
   { title: "Privacy Policy", href: "/privacy-policy" },
+  { title: "Helpful Links", href: "/helpful-links" },
   { title: "Contact", href: "/contact" },
 ]

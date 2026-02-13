@@ -1,21 +1,210 @@
 import { ContentPage } from "./home"
 
 export const helpfulLinksContent: ContentPage = {
-  title: "Helpful Links",
-  description: "Resources for parents and patients",
+  title: "Handouts/Links",
+  description: "Office handouts and helpful online resources for parents and patients",
   sections: [
     {
       type: "hero",
       content: {
-        title: "Helpful Resources",
-        subtitle: "Trusted Health Information",
-        description: "A collection of reliable resources for parents and caregivers."
+        title: "Handouts & Resources",
+        subtitle: "Office Handouts & Trusted Health Information",
+        description: "Access our collection of office handouts organized by topic, along with reliable online resources for parents and caregivers."
+      }
+    },
+    {
+      type: "info",
+      content: {
+        title: "⚠️ Important Medical Disclaimer",
+        description: "The handouts provided below are educational resources and are not meant to replace professional medical advice, diagnosis, or treatment. This information should be used in coordination with your provider visits and ongoing care. \n\nAlways consult your pediatrician for specific medical advice about your child's health. For urgent concerns or medical emergencies, contact our office at (925) 362-1861 or seek immediate medical attention.",
+        callout: true
       }
     },
     {
       type: "features",
       content: {
-        title: "General Health & Development",
+        title: "👶 Newborn & Infant Care",
+        features: [
+          {
+            title: "What is Normal in a Newborn",
+            description: "Understanding typical newborn behaviors, appearances, and care needs during the first weeks of life.",
+            link: "/handouts/What is Normal in a Newborn.pdf"
+          },
+          {
+            title: "Eye Discharge in Newborns",
+            description: "Information about blocked tear ducts and eye discharge in newborns, including home care recommendations.",
+            link: "/handouts/Eye Discharge in Newborns.pdf"
+          },
+          {
+            title: "Circumcision Care",
+            description: "Post-procedure care instructions for circumcision, including cleaning and what to expect during healing.",
+            link: "/handouts/Circumcision Care.pdf"
+          },
+          {
+            title: "Troubleshooting Sleep Problems in Infants",
+            description: "Practical solutions for common infant sleep challenges and establishing healthy sleep patterns.",
+            link: "/handouts/Troubleshooting Sleep Problems in Infants.pdf"
+          }
+        ]
+      }
+    },
+    {
+      type: "features",
+      content: {
+        title: "🍼 Feeding & Nutrition",
+        features: [
+          {
+            title: "Starting Solid Foods in Infants",
+            description: "A guide to introducing solid foods to your infant, including timing, food choices, and safety tips.",
+            link: "/handouts/STARTING SOLID FOODS IN INFANTS.pdf"
+          },
+          {
+            title: "Going From Solids to Table Foods",
+            description: "Transitioning your baby from purees to table foods, including textures and finger food recommendations.",
+            link: "/handouts/Gong From Solids to Table Foods.pdf"
+          },
+          {
+            title: "About Vitamin D",
+            description: "Information about vitamin D requirements for infants and children, including supplementation recommendations.",
+            link: "/handouts/About Vitamin D.pdf"
+          }
+        ]
+      }
+    },
+    {
+      type: "features",
+      content: {
+        title: "🤒 Common Childhood Illnesses",
+        features: [
+          {
+            title: "About Febrile Seizures",
+            description: "Understanding febrile seizures in children, including what causes them, what to do during a seizure, and prognosis.",
+            link: "/handouts/About Febrile Seizures.pdf"
+          },
+          {
+            title: "Cough and Cold Remedies for Children",
+            description: "Safe and effective home remedies for managing coughs and colds in children of various ages.",
+            link: "/handouts/Cough and Cold Remedies for Children.pdf"
+          },
+          {
+            title: "Vomiting and Diarrhea",
+            description: "Managing gastrointestinal illnesses in children, including hydration guidance and when to seek care.",
+            link: "/handouts/Vomiting and Diarrhea.pdf"
+          },
+          {
+            title: "A Note Regarding Tylenol",
+            description: "Important information about acetaminophen (Tylenol) dosing and safety for children.",
+            link: "/handouts/A Note Regarding Tylenol.pdf"
+          }
+        ]
+      }
+    },
+    {
+      type: "features",
+      content: {
+        title: "🏥 Medical Conditions & Skin Care",
+        features: [
+          {
+            title: "Asthma Medications in Children",
+            description: "Understanding asthma medications, including proper use of inhalers and nebulizers for children.",
+            link: "/handouts/Asthma Medications in Children.pdf"
+          },
+          {
+            title: "Molluscum Contagiosum",
+            description: "Understanding this common childhood skin condition, including treatment options and prevention.",
+            link: "/handouts/Molluscum Contagiousum.pdf"
+          },
+          {
+            title: "How to Treat and Prevent Ingrown Toenails",
+            description: "Home care and prevention strategies for ingrown toenails in children.",
+            link: "/handouts/How to Treat and Prevent Ingrown Toenails.pdf"
+          },
+          {
+            title: "Constipation",
+            description: "Understanding and treating constipation in children, including dietary changes and home remedies.",
+            link: "/handouts/Constipation.pdf"
+          }
+        ]
+      }
+    },
+    {
+      type: "features",
+      content: {
+        title: "🧩 ADHD & Behavioral Health",
+        features: [
+          {
+            title: "Vanderbilt Parent Rating Scale",
+            description: "Parent assessment form for evaluating ADHD symptoms and behaviors at home. Please complete and bring to your appointment.",
+            link: "/handouts/Vanderbilt-Parent Form.pdf"
+          },
+          {
+            title: "Vanderbilt Teacher Rating Scale",
+            description: "Teacher assessment form for evaluating ADHD symptoms and academic behaviors in the classroom setting.",
+            link: "/handouts/Vanderbilt-Teacher Form.pdf"
+          },
+          {
+            title: "Child Mind Institute",
+            description: "Resources for children's mental health and learning disorders.",
+            link: "https://childmind.org"
+          }
+        ]
+      }
+    },
+    {
+      type: "features",
+      content: {
+        title: "🩹 Injuries & Sports Medicine",
+        features: [
+          {
+            title: "Cast Care",
+            description: "Instructions for caring for your child's cast and preventing complications during healing.",
+            link: "/handouts/Cast Care.pdf"
+          },
+          {
+            title: "How to Recover From a Concussion",
+            description: "Guidelines for concussion recovery in children, including return-to-play and return-to-learn protocols.",
+            link: "/handouts/How to Recover From A Concussion.pdf"
+          },
+          {
+            title: "Instructions for ImPACT Testing",
+            description: "Information about ImPACT concussion testing for young athletes, including preparation and what to expect.",
+            link: "/handouts/Instructions for ImPACT Testing.pdf"
+          }
+        ]
+      }
+    },
+    {
+      type: "features",
+      content: {
+        title: "📚 School & Wellness",
+        features: [
+          {
+            title: "Getting Ready for the Start of School",
+            description: "Tips for preparing your child for the school year, including health checklists and adjustment strategies.",
+            link: "/handouts/Getting Ready for the Start of School.pdf"
+          },
+          {
+            title: "Starting Preschool on the Right Foot",
+            description: "Helping your child transition to preschool successfully, with preparation tips and what to expect.",
+            link: "/handouts/Starting Preschool on the Right Foot.pdf"
+          },
+          {
+            title: "About Vaccines",
+            description: "Evidence-based information about childhood vaccines, their importance, and common questions.",
+            link: "/handouts/About Vaccines.pdf"
+          },
+          {
+            title: "How to Deal With Seasonal Allergies",
+            description: "Managing seasonal allergy symptoms in children, including prevention strategies and treatment options.",
+            link: "/handouts/HOW TO DEAL WITH SEASONAL ALLERGIES.pdf"
+          }
+        ]
+      }
+    },
+    {
+      type: "features",
+      content: {
+        title: "🌐 Online Health Resources",
         features: [
           {
             title: "American Academy of Pediatrics",
@@ -38,7 +227,7 @@ export const helpfulLinksContent: ContentPage = {
     {
       type: "features",
       content: {
-        title: "Safety & Injury Prevention",
+        title: "🛡️ Safety & Injury Prevention",
         features: [
           {
             title: "Safe Kids Worldwide",
@@ -56,36 +245,6 @@ export const helpfulLinksContent: ContentPage = {
             link: "https://www.poison.org"
           }
         ]
-      }
-    },
-    {
-      type: "features",
-      content: {
-        title: "Mental Health & Behavioral Health",
-        features: [
-          {
-            title: "Child Mind Institute",
-            description: "Resources for children's mental health and learning disorders.",
-            link: "https://childmind.org"
-          },
-          {
-            title: "NAMI (National Alliance on Mental Illness)",
-            description: "Support, education, and advocacy for mental health conditions.",
-            link: "https://www.nami.org"
-          },
-          {
-            title: "Substance Abuse and Mental Health Services Administration (SAMHSA)",
-            description: "National helpline and resources for mental health and substance use disorders.",
-            link: "https://www.samhsa.gov"
-          }
-        ]
-      }
-    },
-    {
-      type: "info",
-      content: {
-        title: "Disclaimer",
-        description: "These links are provided for informational purposes only. Inclusion does not imply endorsement by 1-to-1 Pediatrics. Always consult your pediatrician for specific medical advice about your child. For urgent concerns or medical emergencies, contact our office or seek immediate medical attention."
       }
     }
   ]

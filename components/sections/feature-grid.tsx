@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import Link from "next/link"
 
 interface Feature {
   title: string
@@ -11,9 +10,25 @@ interface FeatureGridProps {
   title?: string
   subtitle?: string
   features: Feature[]
+  columns?: number // Optional columns prop
 }
 
-export function FeatureGrid({ title, subtitle, features }: FeatureGridProps) {
+export function FeatureGrid({ title, subtitle, features, columns }: FeatureGridProps) {
+  // Determine grid columns based on number of features or explicit columns prop
+  // 4 cards → 2 columns (2x2 grid), 3 cards → 3 columns (3 across)
+  const getGridClassName = () => {
+    const cols = columns || (features.length <= 2 || features.length === 4 ? 2 : 3);
+
+    switch(cols) {
+      case 2:
+        return "grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto";
+      case 4:
+        return "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto";
+      default:
+        return "grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto";
+    }
+  }
+  
   return (
     <section className="py-12 md:py-16 bg-gradient-to-br from-stone-50 via-amber-50/30 to-slate-50 relative overflow-hidden">
       {/* Background decoration */}
@@ -23,29 +38,29 @@ export function FeatureGrid({ title, subtitle, features }: FeatureGridProps) {
         {(title || subtitle) && (
           <div className="text-center mb-12">
             {title && (
-              <h2 className="mb-4 text-3xl font-bold md:text-4xl bg-gradient-to-r from-slate-700 to-teal-700 bg-clip-text text-transparent">
+              <h2 className="mb-4 text-2xl sm:text-3xl font-bold md:text-4xl bg-gradient-to-r from-slate-700 to-teal-700 bg-clip-text text-transparent">
                 {title}
               </h2>
             )}
             {subtitle && (
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
                 {subtitle}
               </p>
             )}
           </div>
         )}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className={getGridClassName()}>
           {features.map((feature, index) => {
             const cardContent = (
               <>
-                <CardHeader>
-                  <CardTitle className="text-xl flex items-center gap-3">
-                    <div className="w-3 h-3 bg-gradient-to-r from-teal-500 to-slate-500 rounded-full"></div>
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-lg sm:text-xl flex items-center gap-3">
+                    <div className="w-3 h-3 bg-gradient-to-r from-teal-500 to-slate-500 rounded-full flex-shrink-0"></div>
                     {feature.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base leading-relaxed whitespace-pre-line">
+                <CardContent className="pt-0">
+                  <CardDescription className="text-sm sm:text-base leading-relaxed whitespace-pre-line">
                     {feature.description}
                   </CardDescription>
                 </CardContent>

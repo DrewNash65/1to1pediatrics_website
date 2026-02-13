@@ -30,22 +30,22 @@ export function HeroSection({
         <div className={`mx-auto ${image ? 'grid md:grid-cols-2 gap-12 items-center max-w-6xl' : 'max-w-3xl text-center'}`}>
           <div className={`${image ? 'slide-in-left' : 'text-center'}`}>
             {subtitle && (
-              <p className="mb-4 text-lg font-semibold text-primary bg-primary/10 px-4 py-2 rounded-full inline-block">
+              <p className="mb-4 text-sm sm:text-lg font-semibold text-primary bg-primary/10 px-3 sm:px-4 py-2 rounded-full inline-block">
                 {subtitle}
               </p>
             )}
-            <h1 className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl bg-gradient-to-r from-slate-700 to-teal-700 bg-clip-text text-transparent">
+            <h1 className="mb-6 text-3xl sm:text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl bg-gradient-to-r from-slate-700 to-teal-700 bg-clip-text text-transparent leading-tight">
               {title}
             </h1>
             {description && (
-              <p className="mb-8 text-lg text-muted-foreground md:text-xl leading-relaxed">
+              <p className="mb-8 text-base sm:text-lg text-muted-foreground md:text-xl leading-relaxed px-2 sm:px-0">
                 {description}
               </p>
             )}
             {cta && (
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center px-4 sm:px-0">
                 <Link href={cta.href}>
-                  <Button size="lg" className="font-semibold shadow-2xl hover:shadow-teal-500/20">
+                  <Button size="lg" className="font-semibold shadow-2xl hover:shadow-teal-500/20 w-full sm:w-auto min-h-[48px]">
                     {cta.text}
                   </Button>
                 </Link>

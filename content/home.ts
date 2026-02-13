@@ -31,6 +31,7 @@ export const homeContent: ContentPage = {
       content: {
         title: "Why Choose 1-to-1 Pediatrics?",
         subtitle: "A different approach to pediatric care",
+        columns: 2,
         features: [
           {
             title: "More Time",
@@ -55,7 +56,7 @@ export const homeContent: ContentPage = {
       type: "info",
       content: {
         title: "About Our Practice",
-        description: "1-to-1 Pediatrics opened its doors on Valentine's Day 2011. After working in a busy pediatric office for 16 years, Dr. Nash formed 1-to-1 Pediatrics to provide the kind of personalized, old-school care that's becoming rare in modern medicine. Having celebrated our 13th anniversary, our physicians and staff at 1-to-1 Pediatrics enjoy providing a different, slower-paced, and nurturing environment for children and adolescents to receive preventative and urgent pediatric care.",
+        description: "1-to-1 Pediatrics opened its doors on Valentine's Day 2011. After working in a busy pediatric office for 16 years, Dr. Nash formed 1-to-1 Pediatrics to provide the kind of personalized, old-school care that's becoming rare in modern medicine. Having celebrated our 15th anniversary, our physicians and staff at 1-to-1 Pediatrics enjoy providing a different, slower-paced, and nurturing environment for children and adolescents to receive preventative and urgent pediatric care.",
         image: "/images/Nash-web1.jpg",
         imagePosition: "left"
       }

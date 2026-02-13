@@ -43,18 +43,18 @@ export function AnnouncementBanner() {
   return (
     <div
       className={cn(
-        "relative w-full border-b px-4 py-4 announcement-glow",
-        activeAnnouncement.type === "success" && "bg-green-50 border-green-200 text-green-900",
-        activeAnnouncement.type === "warning" && "bg-yellow-50 border-yellow-200 text-yellow-900",
-        activeAnnouncement.type === "info" && "bg-stone-50 border-teal-200 text-slate-800"
+        "relative w-full border-b-4 px-4 py-4 announcement-glow shadow-lg",
+        activeAnnouncement.type === "success" && "bg-green-50 border-green-500 text-green-900",
+        activeAnnouncement.type === "warning" && "bg-yellow-50 border-yellow-500 text-yellow-900",
+        activeAnnouncement.type === "info" && "bg-stone-50 border-teal-500 text-slate-800"
       )}
     >
       <div className="container mx-auto flex items-center justify-center">
         <div className="flex items-center gap-3 text-center">
-          <Icon className="h-6 w-6 flex-shrink-0" />
+          <Icon className="h-8 w-8 flex-shrink-0 animate-bounce" />
           <div>
-            <p className="font-bold text-lg">{activeAnnouncement.title}</p>
-            <p className="text-base font-medium">{activeAnnouncement.message}</p>
+            <p className="font-bold text-xl">{activeAnnouncement.title}</p>
+            <p className="text-base font-semibold">{activeAnnouncement.message}</p>
           </div>
         </div>
         {activeAnnouncement.dismissible && (

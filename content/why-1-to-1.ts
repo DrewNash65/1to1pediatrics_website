@@ -40,7 +40,7 @@ export const whyOneToOneContent: ContentPage = {
     {
       type: "info",
       content: {
-        title: "How are Danville Pediatrics and 1-to-1 Pediatrics related?",
+        title: "How are Danville Pediatrics\nand 1-to-1 Pediatrics related?",
         description: "Danville Pediatrics and 1-to-1 Pediatrics are partners in your child's care. Danville Pediatrics is the practice itself and is a division of BASS Medical Group. 1-to-1 Pediatrics is a service that runs side-by-side to Danville Pediatrics and provides added value benefit services for the patients of the practice. These services include: an afterhours advice nurse with access to the on call physician, rapid completion of referrals to specialists, prior authorization of medications and services as required by your insurance carrier, timely completion of forms, writing of letters, etc. It is the affiliation of the two entities that makes the practice so unique. Because of 1-to-1 Pediatrics, the practice is able to limit the number of patients we care for, see a reduced volume of visits per day, and generally provide what we feel is the most personalized care for children available."
       }
     },
@@ -48,6 +48,7 @@ export const whyOneToOneContent: ContentPage = {
       type: "features",
       content: {
         title: "The 1-to-1 Difference",
+        columns: 2,
         features: [
           {
             title: "Fewer Patients",

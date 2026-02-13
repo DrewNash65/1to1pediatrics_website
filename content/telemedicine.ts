@@ -10,7 +10,7 @@ export const telemedicineContent: ContentPage = {
         title: "Telemedicine Visits",
         subtitle: "Quality Care from the Comfort of Home",
         description: "Speak face-to-face with your doctor in a virtual environment to discuss medical concerns and symptoms.",
-        image: "/images/Telehealth_Dr_Nash.png"
+        image: "/images/Telehealth_Borden.png"
       }
     },
     {
@@ -24,7 +24,7 @@ export const telemedicineContent: ContentPage = {
       type: "info",
       content: {
         title: "How It Works",
-        description: "Telemedicine visits will be scheduled as appointments, the same way that normal office visits are done. Please call the office to schedule a telemedicine visit. Just prior to your appointment time, you'll receive a link to 'check in' to the visit. You'll then be entered into the queue to be seen.",
+        description: "Telemedicine visits will be scheduled as appointments, the same way that normal office visits are done. Please call the office to schedule a telemedicine visit. Just prior to your appointment time, go to the link on the bottom of this page for the provider for which you are scheduled and click on it. You'll then be entered into the queue to be seen.",
         image: "/images/Nash-web4.jpg",
         imagePosition: "left"
       }
@@ -56,6 +56,14 @@ export const telemedicineContent: ContentPage = {
           {
             title: "Medication Reviews",
             description: "Discuss current medications and potential adjustments"
+          },
+          {
+            title: "Behavioral Concerns",
+            description: "If you have questions about your child's sleep or behavior, telehealth is a great way to communicate with your provider and get your questions answered."
+          },
+          {
+            title: "Nutrition or Feeding Questions",
+            description: "If you have questions regarding nutrition and feeding and you don't want to wait until your child's next well visit, this is a great way to discuss them."
           }
         ]
       }
@@ -79,7 +87,7 @@ export const telemedicineContent: ContentPage = {
           {
             title: "Start a Telemedicine Call With Beth Quadraccia, PA",
             description: "By clicking on the link to the left, the patient/parent agrees to have their visit with Beth Quadraccia, PA via Telehealth. Copays, coinsurance, and deductibles will apply as per the patient's health insurance plan.",
-            link: "#"
+            link: "https://doxy.me/bethquadraccia"
           }
         ]
       }
