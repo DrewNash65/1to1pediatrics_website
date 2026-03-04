@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { footerNav } from "@/config/navigation"
-import { Mail, Phone, MapPin, Clock } from "lucide-react"
+import { Phone, MapPin, Clock } from "lucide-react"
 
 export function Footer() {
   return (
@@ -47,15 +47,7 @@ export function Footer() {
                   </p>
                 </div>
               </li>
-              <li className="flex items-start gap-2">
-                <Mail className="h-4 w-4 mt-1 flex-shrink-0 text-muted-foreground" />
-                <div>
-                  <p className="font-medium">Email</p>
-                  <a href={`mailto:${siteConfig.links.email}`} className="text-muted-foreground hover:text-primary">
-                    {siteConfig.links.email}
-                  </a>
-                </div>
-              </li>
+
             </ul>
           </div>
 

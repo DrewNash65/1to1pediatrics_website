@@ -9,7 +9,7 @@ export const contactContent: ContentPage = {
       content: {
         title: "Contact Us",
         subtitle: "We're Here to Help",
-        description: "Reach out to schedule an appointment, ask questions, or learn more about our practice."
+        description: "Call our office to schedule an appointment or to learn more about our practice. We also offer complimentary \"Meet and Greet\" visits with our providers — a great way to tour our office and find out if we're the right fit for your family."
       }
     },
     {
